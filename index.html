@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <img class="icon" src="home-icon.ico" alt="home icon">
+          </li>
+          <li>Home</li>
+          <li>Github</li>
+          <li>Notes</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+
+      <!-- Count the clicks module -->
+      <div class="module clicks">
+        <h3><span class="js-click-counter">0</span> clicks</h3>
+     <button class="js-clicker">Click me</button>
+      </div>
+
+      <!-- Color the baby bears -->
+      <div class="parent">
+        <div class="child child-1">
+          <p>Child div 1</p>
+          <div class="random-color"></div>
+        </div>
+        <div class="child child-2">
+          <p>Child div 2</p>
+          <div class="random-color"></div>
+        </div>
+        <div class="child child-3">
+          <p>Child div 3</p>
+          <div class="random-color"></div>
+        </div>
+        <div class="child child-4">
+          <p>Child div 4</p>
+          <div class="random-color"></div>
+        </div>
+        <div class="child child-5">
+          <p>Child div 5</p>
+          <div class="random-color"></div>
+        </div>
+      </div>
+
+      <article>
+        <h2>Questions on jQuery</h2>
+        <ol>
+          <li>
+            How do I use jQuery to loop through a bunch of elements of the same class name. Similar to the way I would by using <code>document.etElementsByClassNames('someClass');</code>?
+          </li>
+          <li>
+            I used the vanilla way and the jQuery way to get variables out of a group of class names. When console logged, the vanilla way returns a <code>HTMLCollection []</code> and the jQuery way returns <code>r.fn.init [prevObject: r.fn.init(1)]</code>. What does all that mean?
+          </li>
+          <li>
+            Perhaps this is more of just a general web development question... but when should I be using ids versus classes in the html? Is there anything in jQuery that makes an id or a class preferable in different situations?
+          </li>
+          <li>
+            I modified the handleClicks event handler from class to trigger my <code>colorize</code> function as well. As you can see in my code, I am using the vanilla way. This is kind of related to my first question about looping trough an array of elements. How would I modify this code to do it with all jQuery? <br>
+            <img src="colorize-code.png" alt="The code for the colorize button">
+          </li>
+          <li>
+            Traversing the array in the shopping cart project required I use <code>.parent().parent()</code> twice to go up two levels of nested elements. Is this the best practice or is there a better way? I'm still familiarizing myself with the documentation.
+          </li>
+        </ol>
+      
+      </article>
+
+     
+   </main>
+   <script
+     src="https://code.jquery.com/jquery-3.2.1.min.js"
+     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+     crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+ </body>
+</html>
